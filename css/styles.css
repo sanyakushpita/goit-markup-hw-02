@@ -132,6 +132,9 @@ body {
 .team-list {
   list-style: none;
 }
+.team-list > .item {
+  background: #ffffff;
+}
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
