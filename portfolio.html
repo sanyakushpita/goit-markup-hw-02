@@ -7,6 +7,8 @@
 
     <title>Портфоліо</title>
 
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,41 +20,52 @@
     <!-- Navigation -->
     <header>
       <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <a href="./index.html" class="nav-logo"><span>Web</span>Studio</a>
+        <ul class="site-nav">
+          <li><a class="nav-link" href="./index.html">Studio</a></li>
+          <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="">Contacts</a></li>
         </ul>
       </nav>
       <address>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <ul class="site-address">
+          <li>
+            <a class="address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
     <main>
-      <!-- Filters -->
-      <ul>
-        <li><button type="button">All</button></li>
-        <li><button type="button">Web Site</button></li>
-        <li><button type="button">App</button></li>
-        <li><button type="button">Design</button></li>
-        <li><button type="button">Marketing</button></li>
-      </ul>
-      <!-- Projects -->
-      <section>
+      <!-- Filter-Projects -->
+      <section class="content-portfolio">
         <h1 hidden>Projects</h1>
-        <ul>
+        <!-- Filter -->
+        <ul class="portfolio-filter-list">
+          <li><button class="button-filter" type="button">All</button></li>
+          <li><button class="button-filter" type="button">Web Site</button></li>
+          <li><button class="button-filter" type="button">App</button></li>
+          <li><button class="button-filter" type="button">Design</button></li>
+          <li>
+            <button class="button-filter" type="button">Marketing</button>
+          </li>
+        </ul>
+        <!-- Projects -->
+        <ul class="portfolio-project-list">
           <li>
             <img
               src="/images/Project-1.jpg"
               alt="Banking App Interface Concept"
               width="360"
             />
-            <h2>Banking App Interface Concept</h2>
-            <p>App</p>
+            <h2 class="project-item">Banking App Interface Concept</h2>
+            <p class="project-item-text">App</p>
           </li>
           <li>
             <img
@@ -60,18 +73,18 @@
               alt="Cashless Payment"
               width="360"
             />
-            <h2>Cashless Payment</h2>
-            <p>Marketing</p>
+            <h2 class="project-item">Cashless Payment</h2>
+            <p class="project-item-text">Marketing</p>
           </li>
           <li>
             <img src="/images/Project-3.jpg" alt="Meditaion App" width="360" />
-            <h2>Meditaion App</h2>
-            <p>App</p>
+            <h2 class="project-item">Meditaion App</h2>
+            <p class="project-item-text">App</p>
           </li>
           <li>
             <img src="/images/Project-4.jpg" alt="Taxi Service" width="360" />
-            <h2>Taxi Service</h2>
-            <p>Marketing</p>
+            <h2 class="project-item">Taxi Service</h2>
+            <p class="project-item-text">Marketing</p>
           </li>
           <li>
             <img
@@ -79,13 +92,13 @@
               alt="Screen Illustrations"
               width="360"
             />
-            <h2>Screen Illustrations</h2>
-            <p>Design</p>
+            <h2 class="project-item">Screen Illustrations</h2>
+            <p class="project-item-text">Design</p>
           </li>
           <li>
             <img src="/images/Project-6.jpg" alt="Online Courses" width="360" />
-            <h2>Online Courses</h2>
-            <p>Marketing</p>
+            <h2 class="project-item">Online Courses</h2>
+            <p class="project-item-text">Marketing</p>
           </li>
           <li>
             <img
@@ -93,26 +106,26 @@
               alt="Instagram Stories Concept"
               width="360"
             />
-            <h2>Instagram Stories Concept</h2>
-            <p>Design</p>
+            <h2 class="project-item">Instagram Stories Concept</h2>
+            <p class="project-item-text">Design</p>
           </li>
           <li>
             <img src="/images/Project-8.jpg" alt="Organic Food" width="360" />
-            <h2>Organic Food</h2>
-            <p>Web Site</p>
+            <h2 class="project-item">Organic Food</h2>
+            <p class="project-item-text">Web Site</p>
           </li>
           <li>
             <img src="/images/Project-9.jpg" alt="Fresh Coffee" width="360" />
-            <h2>Fresh Coffee</h2>
-            <p>Web Site</p>
+            <h2 class="project-item">Fresh Coffee</h2>
+            <p class="project-item-text">Web Site</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Additional Information -->
-    <footer>
-      <a href="./index.html">WebStudio</a>
-      <p>
+    <footer class="footer">
+      <a href="./index.html" class="footer-logo"><span>Web</span>Studio</a>
+      <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
