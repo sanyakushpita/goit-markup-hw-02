@@ -12,20 +12,30 @@
 }
 /* Studio */
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2e2f42;
+}
+:root {
+  --logo-button: #4d5ae5;
+  --nav-content: #2e2f42;
+  --address-list-item: #434455;
+  --active-color: #404bbf;
+  --content-button: #ffffff;
+  --logo-footer: #f4f4fd;
+  --text-footer: #e7e9fc;
 }
 /* Navigation */
 .nav-logo > span {
-  color: #4d5ae5;
+  color: var(--logo-button);
 }
 .nav-logo {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  color: #2e2f42;
+  color: var(--nav-content);
   text-decoration: none;
+  text-transform: uppercase;
 }
 .site-nav {
   list-style: none;
@@ -43,51 +53,51 @@ body {
 }
 .nav-link {
   text-decoration: none;
-  color: #2e2f42;
+  color: var(--nav-content);
 }
 .address-link {
   text-decoration: none;
-  color: #434455;
+  color: var(--address-list-item);
 }
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {
-  color: #404bbf;
+  color: var(--active-color);
 }
 .address-link:hover,
 .address-link:focus {
-  color: #404bbf;
+  color: var(--active-color);
 }
 .address-link:active {
-  color: #404bbf;
+  color: var(--active-color);
 }
 /* Information */
 .main-content-title {
-  background: #2e2f42;
+  background: var(--nav-content);
 }
 .content-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--content-button);
 }
 .button-service {
   font-family: inherit;
   cursor: pointer;
-  background: #4d5ae5;
+  background: var(--logo-button-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--content-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .button-service:hover,
 .button-service:focus {
-  background: #404bbf;
+  background: var(--active-color);
 }
 /* Categories */
 .content-list {
@@ -98,13 +108,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--nav-content);
 }
 .content-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-list-item);
 }
 .content-service {
   font-weight: 700;
@@ -112,14 +122,14 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--nav-content);
 }
 .service-list {
   list-style: none;
 }
 /* Our Team */
 .main-content-team {
-  background: #f4f4fd;
+  background: var(--logo-footer);
 }
 .content-team {
   font-weight: 700;
@@ -127,47 +137,48 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--nav-content);
 }
 .team-list {
   list-style: none;
 }
 .team-list > .item {
-  background: #ffffff;
+  background: var(--content-button);
 }
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--nav-content);
 }
 .team-list-position {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-list-item);
 }
 /* Additional Information */
 .footer {
-  background: #2e2f42;
+  background: var(--nav-content);
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--text-footer);
 }
 .footer-logo > span {
-  color: #4d5ae5;
+  color: var(--logo-button);
 }
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  color: #f4f4fd;
+  color: var(--logo-footer);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Portfolio */
@@ -183,18 +194,18 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  border: 1px solid #e7e9fc;
+  color: var(--logo-button);
+  border: 1px solid #e7e9fc var(--text-footer);
   border-radius: 4px;
 }
 .button-filter:hover,
 .button-filter:focus {
-  background: #404bbf;
-  color: #ffffff;
+  background: var(--active-color);
+  color: var(--content-button);
 }
 .button-filter:active {
-  background: #404bbf;
-  color: #ffffff;
+  background: var(--active-color);
+  color: var(--content-button);
 }
 /* Projects */
 .portfolio-project-list {
@@ -205,11 +216,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--nav-content);
 }
 .project-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-list-item);
 }
